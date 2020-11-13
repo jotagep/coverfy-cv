@@ -1,0 +1,111 @@
+.header {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  box-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.3);
+  background-color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  height: 100%;
+
+  div {
+    height: 100%;
+  }
+}
+
+.last-link {
+  width: 150px;
+}
+
+.link-icon {
+  position: relative;
+  padding-right: 20px;
+  &::after {
+    content: "";
+    width: 16px;
+    height: 100%;
+    position: relative;
+    background-size: 16px auto;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-image: url("/img/login.svg");
+  }
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-size: 20px auto;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.menu-open {
+  background-image: url("/img/menu_dg.svg");
+}
+.menu-close {
+  background-image: url("/img/close_dg.svg");
+}
+
+.collapse {
+  transition: height 300ms ease-out;
+}
+
+@screen md {
+  .header {
+    position: fixed;
+    height: 65px;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
+
+  .header-shadow {
+    box-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.3);
+  }
+
+  .link-icon {
+    position: relative;
+    padding-right: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-size: 16px auto;
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-image: url("/img/login.svg");
+    }
+  }
+
+  .collapse {
+    display: none;
+  }
+}
+
+@screen lg {
+  .header {
+    height: 80px;
+  }
+  .wrapper {
+    max-width: 1200px;
+    width: 90%;
+  }
+  .logo {
+    width: 180px;
+  }
+}
