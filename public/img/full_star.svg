@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="56px" viewBox="0 0 59 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>full_star</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="29.5 45.25 12.1603351 54.3660013 15.4719164 35.0580007 1.44383277 21.3839987 20.8301675 18.5669993 29.5 1 38.1698325 18.5669993 57.5561672 21.3839987 43.5280836 35.0580007 46.8396649 54.3660013"></polygon>
+    </defs>
+    <g id="about-coverfy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="full_star">
+            <use fill="#EFCE4A" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <path stroke="#EFCE4A" stroke-width="1" d="M29.5,45.8148879 L11.4962695,55.2800091 L14.9346761,35.2325606 L0.369352198,21.0348788 L20.4981348,18.1099954 L29.5,-0.129775731 L38.5018652,18.1099954 L58.6306478,21.0348788 L44.0653239,35.2325606 L47.5037305,55.2800091 L29.5,45.8148879 Z"></path>
+        </g>
+    </g>
+</svg>

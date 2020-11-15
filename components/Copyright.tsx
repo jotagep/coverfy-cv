@@ -1,6 +1,6 @@
 export default function Copyright() {
   return (
-    <div className="bg-black flex justify-center py-2">
+    <div className="bg-black flex justify-center text-xs md:text-base py-2">
       <span className="text-primary">
         Copyright © 2020 Coverfy made with 😘 by{" "}
         <a

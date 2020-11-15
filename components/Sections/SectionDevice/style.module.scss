@@ -1,0 +1,34 @@
+.section {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40%;
+  max-width: 550px;
+  height: 1200px;
+  z-index: 999;
+  padding-bottom: 50px;
+}
+
+.image {
+  top: 120px;
+  height: 450px;
+  transition: height 1s ease;
+}
+
+@screen lg {
+  .image {
+    top: 80px;
+    height: 500px;
+  }
+}
+
+@screen xxl {
+  .section {
+    height: 1450px;
+  }
+  .image {
+    top: 120px;
+    height: 550px;
+    width: auto;
+  }
+}

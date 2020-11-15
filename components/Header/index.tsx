@@ -44,10 +44,10 @@ export default function Header() {
       <header
         className={`${style.header} ${
           showShadow ? style["header-shadow"] : ""
-        } px-4`}
+        }`}
       >
         <nav
-          className={`${style.wrapper} flex h-full justify-center md:justify-between  md:mx-auto`}
+          className={`${style.wrapper} flex h-full justify-center md:justify-between md:mx-auto`}
         >
           <button
             onClick={handleMenu}
@@ -70,13 +70,16 @@ export default function Header() {
           </Link>
           <ul className="hidden md:flex items-center">
             {headerLinks.map((item, i) => (
-              <li key={i} className="text-sm ml-5 hover:text-secondary">
+              <li
+                key={i}
+                className="text-sm xxl:text-base ml-5 text-primary hover:text-secondary"
+              >
                 <Link href={item.url} activeClassName="font-semibold">
                   {item.title}
                 </Link>
               </li>
             ))}
-            <li className={`${style["last-link"]} text-sm ml-5`}>
+            <li className={`${style["last-link"]} text-sm xxl:text-base ml-5`}>
               <ButtonLink
                 content="Entra en tu cuenta"
                 contentBtn="Registrate gratis"

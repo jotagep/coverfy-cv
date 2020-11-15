@@ -1,7 +1,8 @@
 /* eslint-disable camelcase */
+import { RichTextBlock } from "prismic-reactjs"
 
 // COMMON
-export interface Document {
+interface Document {
   _meta: {
     uid: string
     firstPublicationDate: string
@@ -22,12 +23,28 @@ interface Image {
 
 // Prismic Models
 
-// Post
-export interface Post extends Document {
+// Types
+
+export interface Opinion {
+  image: Image
+  name: string
+  text: RichTextBlock[]
+  stars: number
+}
+export interface Medio {
+  image: Image
+  text: string
+  link: { url: string }
+}
+export interface Garantia {
+  icon: Image
   title: string
-  description: string
-  image?: Image
-  keywords?: string
-  content?: [any]
-  postdate: string
+  text: RichTextBlock[]
+}
+
+// Post
+export interface Home extends Document {
+  medios: Medio[]
+  garantias: Garantia[]
+  opiniones: Opinion[]
 }

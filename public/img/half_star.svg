@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="56px" viewBox="0 0 59 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>half_star</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="29.5 44.25 12.1603351 53.3660013 15.4719164 34.0580007 1.44383277 20.3839987 20.8301675 17.5669993 29.5 0 38.1698325 17.5669993 57.5561672 20.3839987 43.5280836 34.0580007 46.8396649 53.3660013"></polygon>
+        <polygon id="path-3" points="29.5 44.25 12.1603351 53.3660013 15.4719164 34.0580007 1.44383277 20.3839987 20.8301675 17.5669993 29.5 0 38.1698325 17.5669993 57.5561672 20.3839987 43.5280836 34.0580007 46.8396649 53.3660013"></polygon>
+    </defs>
+    <g id="about-coverfy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="half_star" transform="translate(0.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Star" stroke="#EFCE4A" stroke-width="2" fill="#EFCE4A" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+            <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" x="30" y="-9" width="38" height="69"></rect>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Star" stroke="#EFCE4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

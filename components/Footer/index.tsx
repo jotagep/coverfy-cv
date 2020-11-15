@@ -20,8 +20,8 @@ const legal = [
 export default function Footer() {
   return (
     <footer className="bg-primary py-12 footer">
-      <Container className="flex flex-col md:flex-row text-sm text-gray">
-        <div className="flex-1">
+      <Container className="flex flex-wrap text-sm text-gray">
+        <div className="w-full sm:w-1/2 md:w-1/4">
           <h5 className="mb-4 text-lg text-white">Coverfy</h5>
           <p>
             Coverfy Insurance Services,
@@ -45,7 +45,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex-1 mt-4 md:mt-0">
+        <div className="w-full sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
           <h5 className="mb-4 text-lg text-white">Empresa</h5>
           <ul>
             {empresa.map((item, i) => (
@@ -55,7 +55,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="flex-1 mt-4 md:mt-0">
+        <div className="w-full sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
           <h5 className="mb-4 text-lg text-white">Legal</h5>
           <ul className="mb-5">
             {legal.map((item, i) => (
@@ -74,7 +74,7 @@ export default function Footer() {
             />
           </a>
         </div>
-        <div className="flex-1 mt-4 md:mt-0">
+        <div className="w-full sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
           <span className="block mb-4">Empresa financiada por:</span>
           <a
             className="block mb-4"

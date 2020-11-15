@@ -6,6 +6,7 @@ import Header from "components/Header"
 import Footer from "components/Footer"
 import Copyright from "./Copyright"
 import Arrow from "components/Arrow"
+import Stores from "./Stores"
 
 type Props = {
   children: React.ReactNode
@@ -15,12 +16,11 @@ const AppLayout = ({ children }: Props) => {
   return (
     <div>
       <Header />
-      <main style={{ height: "200vh", backgroundColor: "white" }}>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
       <Copyright />
       <Arrow />
+      <Stores />
     </div>
   )
 }

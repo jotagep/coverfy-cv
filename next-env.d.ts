@@ -4,3 +4,4 @@
 
 declare module "@splidejs/react-splide"
 declare module "react-collapse"
+declare module "react-countup"

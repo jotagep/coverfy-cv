@@ -15,6 +15,16 @@ export default function Component({
         .wrapper {
           max-width: 1200px;
         }
+        @media (min-width: 768px) {
+          .wrapper {
+            width: 95%;
+          }
+        }
+        @media (min-width: 1232px) {
+          .wrapper {
+            width: 100%;
+          }
+        }
       `}</style>
     </div>
   )

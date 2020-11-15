@@ -1,5 +1,5 @@
 import Prismic from "prismic-javascript"
-import { Post } from "interfaces"
+import { Home } from "interfaces"
 
 const REPOSITORY = process.env.PRISMIC_REPOSITORY_NAME
 const REF_API_URL = `https://${REPOSITORY}.prismic.io/api/v2`
@@ -41,33 +41,29 @@ async function fetchAPI(
   return json.data
 }
 
-export async function getLastPostsFromPrismic(
-  limit: number,
-  type: string = "",
-  where: string = ""
-): Promise<Post[]> {
+export async function getHome(): Promise<Home> {
   const dataResult = await fetchAPI(`
     {
-      allPosts (sortBy: postdate_DESC, first: ${limit}, tags_in: [${type}], where: {${where}}) {
+      allHomes {
         edges {
           node {
-            _meta {
-              uid
+            opiniones {
+              image
+              name
+              text
+              stars
             }
-            title
-            description
-            postdate
-            image
-            tags {
-              tag {
-                ... on Tag {
-                  name
-                  color
-                  _meta {
-                    uid
-                  }
-                  ischild
-                  type
+            garantias {
+              title
+              icon
+              text
+            }
+            medios {
+              image
+              text
+              link {
+                ... on _ExternalLink {
+                  url
                 }
               }
             }
@@ -77,5 +73,5 @@ export async function getLastPostsFromPrismic(
     }
   `)
 
-  return dataResult?.allPosts?.edges.map((item: any) => item.node)
+  return dataResult?.allHomes?.edges.map((item: any) => item.node)[0]
 }

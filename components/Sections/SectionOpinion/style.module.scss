@@ -1,0 +1,20 @@
+.img {
+  filter: grayscale(100%);
+}
+
+.avatar {
+  width: 70px;
+}
+
+.border {
+  border-bottom: 2px dotted #ddd;
+}
+
+@screen md {
+  .border {
+    border: none;
+  }
+  .avatar {
+    width: 100px;
+  }
+}
